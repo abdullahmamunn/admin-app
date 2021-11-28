@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data['mamun'] = "mamun";
+
+    return view('welcome-mamun',$data);
 });
